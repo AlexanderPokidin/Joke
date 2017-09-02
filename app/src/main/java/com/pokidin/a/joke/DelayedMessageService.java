@@ -37,8 +37,8 @@ public class DelayedMessageService extends IntentService {
         handler.post(new Runnable() {
             @Override
             public void run() {
+                Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
             }
         });
-        Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
     }
 }
